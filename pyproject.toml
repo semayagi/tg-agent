@@ -1,0 +1,23 @@
+[project]
+name = "tg-agent"
+version = "0.1.0"
+description = "AI-agent that analyzes Telegram chats and sends GIFs"
+requires-python = ">=3.11"
+
+dependencies = [
+    "python-telegram-bot>=21.0",
+    "openai>=1.30",
+    "requests>=2.31",
+    "loguru>=0.7",
+    "pydantic-settings>=2.2",
+]
+
+[project.scripts]
+tg-agent = "main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
