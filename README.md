@@ -53,10 +53,20 @@ uv run python main.py
 
 #### Способ 3
 Написать там любое сообщение, затем открыть в браузере:
+
 ```
 https://api.telegram.org/bot<TOKEN>/getUpdates
 ```
 Найти поле `"chat": {"id": -1001234567890}` - это и есть chat ID.
+
+### Как узнать Thread ID
+С помощью команды 'стат'
+
+```
+Собрано: {'(-1003923264684, 3)': 3}
+```
+
+3 - это thread_id
 
 ### LLM_API_KEY
 Получить API_KEY своей нейросети. Есть бесплатные на openrouter.ai, я использую модель openai/gpt-oss-20b:free - если вы тоже, то в .env.example в полях LLM_MODEL и LLM_BASE_URL уже выставлены нужные значения.

@@ -1,3 +1,4 @@
+# Прослойка над клиентом, дающая доступ к нужным извне методам
 from typing import Optional
 from src.services.telegram_agent.adapters.telegram.telegram_client import TelegramBotClient
 from src.services.telegram_agent.adapters.telegram.message_store import MessageStore

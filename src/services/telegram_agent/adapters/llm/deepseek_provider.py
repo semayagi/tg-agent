@@ -1,3 +1,4 @@
+# Прослойка над клиентом, дающая доступ к нужным извне методам
 from src.services.telegram_agent.adapters.llm.deepseek_client import LLMClient
 
 
