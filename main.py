@@ -46,7 +46,7 @@ async def cli_loop(agent: Agent, store: MessageStore) -> None:
         print("\n=== Telegram AI Agent ===")
         print("Бот слушает чаты в фоне.")
         print("Возможности: анализировать чат, отправить гифку - просто введите произвольный запрос")
-        print("Команды: 'выход' — завершить\n")
+        print("Команды: 'стат' - количество, 'выход' — завершить\n")
 
         while True:
             print("-" * 42)
